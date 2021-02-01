@@ -1,7 +1,7 @@
 ---
 title: "Lab 02"
-author: ""
-date: ""
+author: "Andrew Blosse"
+date: "02/01/2021"
 output: 
   html_document:
     toc: true
@@ -34,6 +34,10 @@ you run a simulation on a high performance computer. Organize the contents in
 6. place the `.qsub` files in a directory named `hpc_start/`;
 7. copy directory `organize_me/` and name the copy `simulations/`;
 8. delete directory `organize_me/` and all of its contents.
+
+```{r}
+
+```
 
 
 
