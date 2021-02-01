@@ -82,7 +82,7 @@ x[x <= 0]
 3. Select the numbers divisible by 3 from `x`.
 
 ```{r}
-
+x[as.numeric(x) %% 3 == 0]
 ```
 
 
