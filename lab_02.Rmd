@@ -35,12 +35,6 @@ you run a simulation on a high performance computer. Organize the contents in
 7. copy directory `organize_me/` and name the copy `simulations/`;
 8. delete directory `organize_me/` and all of its contents.
 
-```{r}
-
-```
-
-
-
 ## Attributes
 
 Create a date-time object based on the atomic double vector below. You'll
@@ -48,13 +42,15 @@ need to set the class attribute to `"POSIXct"`
 
 ```{r}
 z <- seq(0, 3600 * 10, by = 3600)
+attr(z, "class") <- "POSIXct"
+z
 ```
 
 What do you notice about the date-time? If you are unsure, check out
 [Unix Epoch](https://en.wikipedia.org/wiki/Unix_time). A time converter is
 available [here](https://www.epochconverter.com).
 
-
+The times before Jan 1st, 1970 have massive timestamps. 
 
 ## Subsetting
 
@@ -70,9 +66,25 @@ Complete the following without using any loops.
 
 1. Subset only the letters from `x`.
 
+```{r}
+x[x %in% letters]
+```
+
+
 2. Subset only the negative numbers from `x`.
 
+```{r}
+x[x <= 0]
+
+```
+
+
 3. Select the numbers divisible by 3 from `x`.
+
+```{r}
+
+```
+
 
 4. Remove all values with an even index from `x`.
 
